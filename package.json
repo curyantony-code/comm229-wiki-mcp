@@ -1,0 +1,29 @@
+{
+  "name": "comm229-wiki-mcp",
+  "version": "1.1.0",
+  "description": "MCP server for a markdown wiki — exposes read, write, search, and log tools over stdio",
+  "keywords": ["mcp", "wiki", "markdown", "claude", "model-context-protocol"],
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "comm229-wiki-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
